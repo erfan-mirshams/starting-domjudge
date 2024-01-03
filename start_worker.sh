@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOMJUDGE_VERSION=8.2.2
+DOMJUDGE_VERSION=latest
 WORKER_ID=$1 #number (id) of judgehost
 SERVER_URL="192.168.1.143:12345/" #domserver url
 

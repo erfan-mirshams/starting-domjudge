@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOMJUDGE_VERSION=8.2.2
+DOMJUDGE_VERSION=latest
 MYSQL_PASSWORD=mysql_password
 MYSQL_ROOT_PASSWORD=mysql_root_password
 
