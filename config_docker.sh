@@ -1,9 +1,10 @@
 #!/bin/bash
 
-export DOMJUDGE_VERSION=7.1.0
-MARIADB_VERSION=latest
+export DOMJUDGE_VERSION=8.2.2
+MARIADB_VERSION=focal  # Use the appropriate Ubuntu version codename
 
 sudo apt update
+sudo apt upgrade -y
 
 sudo apt install -y docker.io
 
