@@ -2,7 +2,7 @@
 
 DOMJUDGE_VERSION=latest
 WORKER_ID=$1 #number (id) of judgehost
-SERVER_URL="192.168.1.143:12345/" #domserver url
+SERVER_URL="your_url:12345/" #domserver url and port
 
 WORKER_PASSWORD="judge_pass" #judgehost user account password in the server
 
