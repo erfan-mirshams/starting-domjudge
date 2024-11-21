@@ -1,0 +1,12 @@
+services:
+  judgehost:
+    image: domjudge/judgehost:${DOMJUDGE_VERSION}
+    privileged: true
+    environment:
+      - CONTAINER_TIMEZONE=${TZ}
+      - JUDGEDAEMON_PASSWORD=${JUDGEDAEMON_PASSWORD}
+      - DOMSERVER_BASEURL=${DOMSERVER_BASEURL}
+      - DAEMON_ID=0
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:rw
+    restart: unless-stopped
