@@ -6,7 +6,7 @@ services:
       - CONTAINER_TIMEZONE=${TZ}
       - JUDGEDAEMON_PASSWORD=${JUDGEDAEMON_PASSWORD}
       - DOMSERVER_BASEURL=${DOMSERVER_BASEURL}
-      - DAEMON_ID=0
+      - DAEMON_ID=${WORKER_DAEMON_ID}
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:rw
     restart: unless-stopped
