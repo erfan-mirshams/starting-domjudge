@@ -31,7 +31,9 @@ services:
       - mariadb
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
+      - domjudge_opt:/opt
     restart: unless-stopped
 
 volumes:
   mariadb_data:
+  domjudge_opt:
